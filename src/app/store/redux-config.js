@@ -6,7 +6,6 @@ const __NEXT_REDUX_STORE__ = '__NEXT_REDUX_STORE__'
 
 function getOrCreateStore (initialState) {
   // Always make a new store if server, otherwise state is shared between requests
-  console.log('initialState', initialState)
   if (isServer) {
     return initializeStore(initialState)
   }

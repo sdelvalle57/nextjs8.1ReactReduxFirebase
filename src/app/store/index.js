@@ -5,10 +5,10 @@ import ReduxPromise from 'redux-promise';
 import rootReducer from '../reducers/index';
 
 /** If you want to add more than one middleware */
-const middlewares = [ThunkMiddleware, ReduxPromise]
+//const middlewares = [ThunkMiddleware, ReduxPromise]
 
 export function initializeStore (initialState = {}) {
-  return createStore(rootReducer, initialState, composeWithDevTools(applyMiddleware(...middlewares)))
-  //return createStore(rootReducer, initialState, composeWithDevTools(applyMiddleware(ThunkMiddleware)))
+  //return createStore(rootReducer, initialState, composeWithDevTools(applyMiddleware(...middlewares)))
+  return createStore(rootReducer, initialState, composeWithDevTools(applyMiddleware(ThunkMiddleware)))
 
 }

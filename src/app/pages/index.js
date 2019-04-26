@@ -31,11 +31,9 @@ class Index extends Component {
 }
 
 const mapDispatchToProps = (dispatch) => {
-  console.log(dispatch)
   return{
     startCounter: () => dispatch(startClock())
   }
-    
 }
 
 const mapStateToProps = (state) => {
