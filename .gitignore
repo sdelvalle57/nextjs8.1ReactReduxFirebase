@@ -3,4 +3,3 @@ node_modules/
 dist/
 .env
 firebase-debug.log
-src/app/credentials/

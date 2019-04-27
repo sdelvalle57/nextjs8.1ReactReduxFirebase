@@ -12,6 +12,7 @@ class Index extends Component {
   }
 
   componentDidMount () {
+    console.log(process.env.FOO);
     this.props.startCounter()
   }
 
